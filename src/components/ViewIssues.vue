@@ -69,7 +69,7 @@
             const response = await githubController.value.listIssues(props.repository.owner.login,props.repository.name,state.value);
             emit('update:issues', response.data || []);
         } catch (error) {
-            console.error('Search error:', error);
+            console.error('Error Fetching Issues:', error);
         }
     }
 </script>

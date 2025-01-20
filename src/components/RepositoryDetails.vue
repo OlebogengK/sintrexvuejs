@@ -64,7 +64,7 @@
           repo.value = props.repository || {};
           dialogVisible.value = true;
         } catch (error) {
-            console.error('Search error:', error);
+            console.error('Error Fetching Details:', error);
         }
         
     }
